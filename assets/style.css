@@ -1,0 +1,87 @@
+:root {
+    font-size: 16px;
+    --blue: rgb(0, 119, 255);
+    --header-blue: rgb(20, 79, 145);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    top:0;
+    width:98vw;
+    padding: 1vh 1vw;
+    margin: 0;
+    border-bottom: 2px solid var(--blue);
+    font-size: 18px;
+}
+
+header * {
+    color: var(--header-blue);
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.2em 0;
+}
+
+p, a, li {
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    margin: 0.08em 0;
+}
+
+nav {
+    margin:0;
+    border-bottom: 6px solid var(--blue);
+    padding: 0.7vh 1vw;
+    font-size: 14px;
+    width:98vw;
+    display: flex;
+    flex-direction: row;
+}
+
+nav p, nav a {
+    font-size: 1em;
+    color: var(--blue);
+    margin: 0;
+}
+
+nav p:not(:last-of-type)::after {
+    content: ">";
+    text-decoration: none;
+    padding: 0 0.7em;
+    display: inline-block;
+}
+
+main {
+    margin: 3vh 35vw;
+}
+
+.chapter-nav a {
+    color: rgb(20,20,20);
+    text-decoration: underline;
+}
+
+.chapter-nav {
+    padding: 0;
+    border: none;
+    flex-direction: column;
+    width: auto;
+    gap: 0.4em;
+    font-size: 18px;
+}
+
+footer {
+    font-size:15px;
+    bottom:0;
+    position: absolute;
+    padding:3vh 2.5vw;
+    width:95vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
